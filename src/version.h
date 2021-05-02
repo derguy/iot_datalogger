@@ -1,1 +1,0 @@
-#define GITHUB_RELEASE_VERSION "<RELEASE_VERSION>"  // will be set in github action e.g. 1.0.2

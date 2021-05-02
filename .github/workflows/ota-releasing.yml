@@ -38,6 +38,8 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
           return context.payload.ref.replace(/refs\/tags\//, '');
+    - name: Run PlatformIO Install Libraries
+      run: pio lib install
     - name: Set release version in version.h
       shell: bash
       run: |
